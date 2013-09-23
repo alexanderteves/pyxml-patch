@@ -1,0 +1,13 @@
+--- ParsedAbbreviatedRelativeLocationPath.py.orig	2013-09-23 12:20:39.751978011 +0200
++++ ParsedAbbreviatedRelativeLocationPath.py	2013-09-23 12:21:17.635978427 +0200
+@@ -28,8 +28,8 @@
+         self._right = right
+         nt = ParsedNodeTest.ParsedNodeTest('node','')
+         ppl = ParsedPredicateList.ParsedPredicateList([])
+-        as = ParsedAxisSpecifier.ParsedAxisSpecifier('descendant-or-self')
+-        self._middle = ParsedStep.ParsedStep(as, nt, ppl)
++        _as = ParsedAxisSpecifier.ParsedAxisSpecifier('descendant-or-self')
++        self._middle = ParsedStep.ParsedStep(_as, nt, ppl)
+ 
+     def evaluate(self, context):
+         res = []
